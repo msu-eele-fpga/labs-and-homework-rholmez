@@ -4,6 +4,6 @@ Overview
 
 This hw assignment was to make and simulate a synchronizer using 2 dfilpflops linked together.
 
-![Wave](C:\Users\riley\EELE467_labs-and-hw\docs\assets\hw3_wave.png)
+![Wave](https://github.com/msu-eele-fpga/labs-and-homework-rholmez/blob/main/docs/assets/hw3_wave.png)
 
-![AllTestsPassed](C:\Users\riley\EELE467_labs-and-hw\docs\assets\hw3_all_tests_passed.png)
+![AllTestsPassed](https://github.com/msu-eele-fpga/labs-and-homework-rholmez/blob/main/docs/assets/hw3_all_tests_passed.png)
