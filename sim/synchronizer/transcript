@@ -1,0 +1,17 @@
+vsim work.synchronizer_tb(testbench)
+# vsim work.synchronizer_tb(testbench) 
+# Start time: 16:30:31 on Sep 04,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.synchronizer_tb(testbench)#1
+add wave -r /*
+run
+# ** Note: all tests passed!
+#    Time: 100 ns  Iteration: 0  Instance: /synchronizer_tb
+# 1
+# Break in Process check_output at C:/Users/riley/EELE467_labs-and-hw/sim/synchronizer/synchronizer_tb.vhd line 111
+# End time: 16:39:27 on Sep 04,2024, Elapsed time: 0:08:56
+# Errors: 0, Warnings: 1
