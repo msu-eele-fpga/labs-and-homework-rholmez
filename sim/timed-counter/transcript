@@ -210,3 +210,4 @@ run -all
 # 1
 # Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 167
 # Causality operation skipped due to absence of debug database file
+
