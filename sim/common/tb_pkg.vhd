@@ -12,9 +12,4 @@ end package;
 package body tb_pkg is
 
     procedure wait_for_clock_edge(signal clk: in std_ulogic) is
-    begin
-        wait until rising_edge(clk);
-        wait for COMBINATIONAL_DELAY;
-    end procedure;
 
-end package body;
