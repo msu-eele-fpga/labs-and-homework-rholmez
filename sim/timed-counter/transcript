@@ -1,0 +1,213 @@
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.timed_counter_tb(testbench)
+# vsim work.timed_counter_tb(testbench) 
+# Start time: 12:46:43 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd(61): (vopt-1270) Bad default binding for component instance "dut_100ns_counter: timed_counter".
+#  (Component port "counter_check" is not on the entity "work.timed_counter".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# ** Error (suppressible): C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd(71): (vopt-1270) Bad default binding for component instance "dut_240ns_counter: timed_counter".
+#  (Component port "counter_check" is not on the entity "work.timed_counter".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 12:46:44 on Sep 10,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 2
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.timed_counter_tb(testbench)
+# vsim work.timed_counter_tb(testbench) 
+# Start time: 12:48:38 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-7) Failed to open  file "C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/work/@_opt/_deps" in read mode.
+# File exists. (errno = EEXIST)
+# ** Warning: (vopt-56) Problem with optimized design dependency file "C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/work/@_opt/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: (vopt-8) Problem while reading dependency file "_deps".
+# No such file or directory. (errno = ENOENT)
+# Vopt Compiler exiting
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 12:48:39 on Sep 10,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 3
+vsim work.timed_counter_tb
+# vsim work.timed_counter_tb 
+# Start time: 12:49:09 on Sep 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.print_pkg(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.timed_counter_tb(testbench)#1
+add wave sim:/timed_counter_tb/*
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 139
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 139
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.print_pkg(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.timed_counter_tb(testbench)#1
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# ** Failure: error in test case 'counter not done'
+#    Time: 771 ns  Iteration: 0  Instance: /timed_counter_tb
+# ** Failure: error in test case 'counter not done'
+#    Time: 891 ns  Iteration: 0  Instance: /timed_counter_tb
+# ** Failure: error in test case 'counter is done'
+#    Time: 911 ns  Iteration: 0  Instance: /timed_counter_tb
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 140
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.print_pkg(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.timed_counter_tb(testbench)#1
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 141
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.print_pkg(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.timed_counter_tb(testbench)#1
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# testing 240 ns timer x2: disabled
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 152
+# Compile of print_pkg.vhd was successful.
+# Compile of assert_pkg.vhd was successful.
+# Compile of tb_pkg.vhd was successful.
+# Compile of timed_counter_tb.vhd was successful with warnings.
+# Compile of timed_counter.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.print_pkg(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.float_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading ieee.float_pkg
+# Loading work.assert_pkg(body)
+# Loading work.tb_pkg(body)
+# Loading std.env(body)
+# Loading work.timed_counter_tb(testbench)#1
+run -all
+# testing 100 ns timer: enabled
+# test to make sure done doesnt get asserted when enable is false
+# test 200ns counter with enable
+# testing 240 ns timer: enabled
+# testing 240 ns timer x2: disabled
+# testing 480 ns timer : enable
+# 1
+# Break in Process stimuli_and_checker at C:/Users/riley/EELE467_labs-and-hw/sim/timed-counter/timed_counter_tb.vhd line 167
+# Causality operation skipped due to absence of debug database file
+
