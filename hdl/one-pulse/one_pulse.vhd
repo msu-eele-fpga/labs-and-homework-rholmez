@@ -1,8 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.print_pkg.all;
-use work.assert_pkg.all;
-use work.tb_pkg.all;
+use ieee.numeric_std.all;  -- Add this for numeric conversions
+
+  
 
 entity one_pulse is 
     port(
@@ -27,11 +27,19 @@ architecture one_pulse_arch of one_pulse is
                 elsif rising_edge(clk) then
                     case state is
                         when idle => 
-                            state <= high when input = '1' else idle;
+                            if input = '1' then 
+                                state <= high;
+                            else 
+                                state <= idle;
+                            end if;
                         when high =>
                             state <= low;
                         when low =>
-                            state <= idle when input = '0' else low;
+                            if input = '0' then
+                                state <= idle;
+                            else
+                                state <= low;
+                            end if;
                         when others =>
                             state <= idle;
                     end case;

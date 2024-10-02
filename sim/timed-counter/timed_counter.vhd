@@ -1,8 +1,5 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.print_pkg.all;
-use work.assert_pkg.all;
-use work.tb_pkg.all;
 
 entity timed_counter is 
 generic(
@@ -19,7 +16,7 @@ end entity timed_counter;
 architecture timed_counter_arch of timed_counter is
     
     constant COUNTER_LIMIT : natural := (count_time / clk_period);
-    signal counter : natural range 0 to 15;
+    signal counter : natural range 0 to COUNTER_LIMIT+10;
     begin
 
         process(clk)
