@@ -1,8 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.print_pkg.all;
-use work.assert_pkg.all;
-use work.tb_pkg.all;
+
 
 entity debouncer is
     generic (
@@ -44,8 +42,11 @@ architecture debouncer_arch of debouncer is
 
                 when idle => 
                 counter <= 0;
-                    state <= d1 when input = '1' else
-                             idle;
+                    if input = '1' then
+                        state <= d1;
+                    else
+                        state <= idle;
+                    end if;
                     
 
                 when d1 =>
@@ -55,8 +56,12 @@ architecture debouncer_arch of debouncer is
                     elsif(counter = COUNTER_LIMIT-1) then
                         done <= true;
                         counter <= 0;
-                        state <= d2 when input = '0' else
-                                 d1;
+                        if input = '0' then
+                            state <= d2;
+                        else 
+                            state <= d1;
+                        end if;
+                        
                     else
                         counter <= 0;
                     end if;

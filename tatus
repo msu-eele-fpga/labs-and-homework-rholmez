@@ -1,0 +1,327 @@
+[33mcommit 831eb3cf1511997717a33a9b98ed44ea438b9fdd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mlab-4[m[33m, [m[1;31morigin/lab-4[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Thu Sep 19 20:16:30 2024 -0600
+
+    lab4 state diagram v1
+
+[33mcommit dd04f4f2cf3372767b098d32c9a67631d9e5cc96[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 17 12:50:59 2024 -0600
+
+    lab4 block diagram v1
+
+[33mcommit b5bcceed80e43ee71485131ff9b005a982e31a57[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 498fd4c 16b0e33
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Tue Sep 17 12:12:32 2024 -0600
+
+    Merge pull request #13 from msu-eele-fpga/hw6
+    
+    hw6_submission
+
+[33mcommit 16b0e331ece4b9895aa6067f512298c5ff20aaaa[m[33m ([m[1;33mtag: [m[1;33mhw6-submission[m[33m, [m[1;31morigin/hw6[m[33m, [m[1;32mhw6[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 17 12:11:28 2024 -0600
+
+    hw6_submission
+
+[33mcommit 498fd4ca8dd7ef7af934803409428b29d8775d3b[m
+Merge: 6aa1548 5733c74
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Tue Sep 17 11:57:43 2024 -0600
+
+    Merge pull request #12 from msu-eele-fpga/hw6
+    
+    hw6 images
+
+[33mcommit 5733c74d1053ea04f0286c9a883d88e000fe7cbf[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 17 11:56:06 2024 -0600
+
+    hw6 images
+
+[33mcommit 6aa1548bdfdfca6d95d8da8cc45a912ba9f1b659[m
+Merge: 9f871a7 2c2bc6d
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Fri Sep 13 10:53:31 2024 -0600
+
+    Merge pull request #11 from msu-eele-fpga/main
+    
+    GitHub Classroom: Sync Assignment
+
+[33mcommit 2c2bc6d4efdb97bd47796a602362dec0b65a5d4b[m
+Merge: 29a5515 9f871a7
+Author: Trevor Vannoy <tvannoy+github@pm.me>
+Date:   Fri Sep 13 09:44:36 2024 -0600
+
+    Merge branch 'main' into main
+
+[33mcommit 29a55153aefc38799427909939494ec39ab40f88[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Thu Sep 12 19:44:06 2024 -0600
+
+    ignore vim swap files
+
+[33mcommit 015da3035d1c75319d802100db76f8bfc07962c2[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Thu Sep 12 08:38:50 2024 -0600
+
+    fix typo
+
+[33mcommit f2d435ccace339333688ce2741e83a908d8af8df[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Wed Sep 11 19:16:49 2024 -0600
+
+    fix order of arguments in assert_eq
+    
+    The actual is first and the expected is second
+
+[33mcommit 9f871a78e79d87e2b04a44648bd1669f1ed6ce39[m
+Merge: 713c50e b36a397
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Wed Sep 11 17:03:05 2024 -0600
+
+    Merge pull request #10 from msu-eele-fpga/hw-5
+    
+    hw 5 submission
+
+[33mcommit b36a39722775c346b35f199c15e73e486fe2df24[m[33m ([m[1;31morigin/hw-5[m[33m)[m
+Merge: 689e411 713c50e
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Wed Sep 11 17:02:57 2024 -0600
+
+    Merge branch 'main' into hw-5
+
+[33mcommit 689e41183085c9f7ffdb272b758c27db4ccbfacb[m[33m ([m[1;32mhw-5[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Wed Sep 11 17:00:09 2024 -0600
+
+    hw 5 submission
+
+[33mcommit 713c50edf075550b23882f94aeefda103f468365[m
+Merge: f7d466a c90f27c
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Wed Sep 11 16:55:32 2024 -0600
+
+    Merge pull request #9 from msu-eele-fpga/hw-5
+    
+    hw_5_images
+
+[33mcommit c90f27c570adb73950b5075b6b22aa892e0d057e[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Wed Sep 11 16:54:55 2024 -0600
+
+    hw_5_images
+
+[33mcommit 23425acd27e209f9695bdf5b81247a767fb5ced8[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Tue Sep 10 17:28:38 2024 -0600
+
+    add naming conventions for active-low signals
+
+[33mcommit f7d466a21119630fd69ba5bfc58d9101963741ae[m
+Merge: 8018ac4 f5abeff
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Tue Sep 10 14:23:42 2024 -0600
+
+    Merge pull request #8 from msu-eele-fpga/hw-4
+    
+    Hw4
+
+[33mcommit f5abeff11e87a3a2d3c7fa1ded3c6b336d8a57bf[m[33m ([m[1;31morigin/hw-4[m[33m, [m[1;32mhw-4[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 10 14:21:07 2024 -0600
+
+    Hw4
+
+[33mcommit 8018ac4f9412388f30475ad0a5153285940ec229[m
+Merge: 1074735 3b6b0a4
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Tue Sep 10 14:14:32 2024 -0600
+
+    Merge pull request #7 from msu-eele-fpga/hw-4
+    
+    hw4_images
+
+[33mcommit 3b6b0a4d9ad8f57cd67db81ec9af90671f8875b6[m[33m ([m[1;33mtag: [m[1;33mhw-5-submission[m[33m, [m[1;33mtag: [m[1;33mhw-4-submission[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 10 14:05:45 2024 -0600
+
+    hw4_images
+
+[33mcommit 86735cbbbfaf1c1146a3778269e40df91c015e0f[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Tue Sep 10 11:45:48 2024 -0600
+
+    add minimal vhdl style guide
+    
+    Students will be expected to follow this style guide when writing VHDL
+    code
+
+[33mcommit 3d70ef5cd9e17741aaefb67111722a18482393e1[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Mon Sep 9 17:04:15 2024 -0600
+
+    ignore questa transcript files
+
+[33mcommit 87f0b62b59bf9f22f1e8d9422c29fa30e501842b[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Sun Sep 8 20:22:06 2024 -0600
+
+    use 1 us instead of 1000 ns
+
+[33mcommit 43438889bb6aa6770b5c6b0816b557c4b3e7a9c5[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Sun Sep 8 20:12:18 2024 -0600
+
+    add debouncer testbench files for the async conditioner homework
+
+[33mcommit 107473562a3ed9fe6fc86e0d20f49b6cc5fb1b8a[m[33m ([m[1;33mtag: [m[1;33mhw3-submission[m[33m)[m
+Merge: 62f9aa4 63b24ae
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Thu Sep 5 11:35:25 2024 -0600
+
+    Merge pull request #5 from msu-eele-fpga/hw-3
+    
+    Hw3Submission2
+
+[33mcommit 63b24ae9be2039691baba703a7730b24811b0dab[m[33m ([m[1;31morigin/hw-3[m[33m, [m[1;32mhw-3[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Thu Sep 5 11:33:23 2024 -0600
+
+    Hw3Submission2
+
+[33mcommit 62f9aa46d77bee023a04c65498e6ef604a89da81[m
+Merge: 198e480 33f270b
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Thu Sep 5 11:29:21 2024 -0600
+
+    Merge pull request #4 from msu-eele-fpga/hw-3
+    
+    Hw3Submission
+
+[33mcommit 33f270be67347a560a066285feb6c0f47b66e7eb[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Thu Sep 5 11:28:09 2024 -0600
+
+    Hw3Submission
+
+[33mcommit 6468638ad5da66b9be504bbc13c2a3f43d261dac[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Wed Sep 4 20:16:50 2024 -0600
+
+    fix copyright notices
+
+[33mcommit 6d3de28ba7df9b83f70f8191f16bf58fd538a546[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Wed Sep 4 14:34:42 2024 -0600
+
+    use kebab-case for folder names
+    
+    This is the case I want to use for folder names, so I should be
+    consistent...
+
+[33mcommit 198e48059ce6b701415a5b87cfa1fab1465ea9f7[m
+Merge: ffebb27 d74b14e
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Wed Sep 4 11:32:19 2024 -0600
+
+    Merge pull request #1 from msu-eele-fpga/main
+    
+    GitHub Classroom: Sync Assignment
+
+[33mcommit d74b14e9357a5b40ebcc427029d8893c5ca84904[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Tue Sep 3 20:04:05 2024 -0600
+
+    add testbench for hw 5
+    
+    hw 5 will cover creating a state machine for a vending machine.
+
+[33mcommit 79255b7aa958a8e0247a397ec99609134f5ebe6e[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Tue Sep 3 19:55:00 2024 -0600
+
+    add assert and print packages for testbenches
+    
+    These packages are from the book "Effective Coding with VHDL". They
+    will be used in testbenches
+
+[33mcommit 2a0a3bee480c9cf8e9a22b2139fefd1ac020e775[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Tue Sep 3 18:54:00 2024 -0600
+
+    add quartus simulation folder to gitignore
+
+[33mcommit ffebb27a2dbd57b39dac1d441c5ea50637aed162[m[33m ([m[1;33mtag: [m[1;33mlab-2-submission[m[33m)[m
+Merge: 1716f67 1c27125
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Tue Sep 3 12:42:07 2024 -0600
+
+    Merge pull request #3 from msu-eele-fpga/lab-2
+    
+    Lab 2 submission
+
+[33mcommit 1c27125f2b0314cf9bc396af18c4837a9d0ba1e6[m[33m ([m[1;31morigin/lab-2[m[33m, [m[1;32mlab-2[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Tue Sep 3 12:41:01 2024 -0600
+
+    Lab 2 submission
+
+[33mcommit 1716f6749c1692873a698f4f52ab60d5cace39ce[m
+Merge: 508fcca e6f6f19
+Author: rholmez <158118023+rholmez@users.noreply.github.com>
+Date:   Fri Aug 30 17:04:30 2024 -0600
+
+    Merge pull request #2 from msu-eele-fpga/hw-2
+    
+    Hw2 submission
+
+[33mcommit e6f6f19ae37ac0d02f3b04701e6649c9d036deb8[m[33m ([m[1;31morigin/hw-2[m[33m, [m[1;32mhw-2[m[33m)[m
+Author: Riley Holmes <q33n519@msu.montana.edu>
+Date:   Fri Aug 30 16:57:15 2024 -0600
+
+    Hw2 submission
+    $ git move main
+    git: 'move' is not a git command. See 'git --help'.
+    
+    The most similar command is
+            remote
+    
+            riley@LAPTOP-TB2QC51Q MINGW64 ~/Practice (cool-feature)
+            $ git branch main
+            fatal: a branch named 'main' already exists
+
+[33mcommit 21160fca3456d7cbf99805bf245c97922029a1b1[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Thu Aug 29 16:15:57 2024 -0600
+
+    add synchronizer testbench for hw3
+
+[33mcommit 8c0461fddab1c7da68234ab7cc95a8e381718c57[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Thu Aug 29 16:15:41 2024 -0600
+
+    add questa files to gitignore
+
+[33mcommit e3f4f94a0f31327eba63f08f1a0c7e6484e1b434[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Wed Aug 28 20:33:55 2024 -0600
+
+    add markdown template for lab/hw submissions
+
+[33mcommit c6f15323fefb733113fefe1473dcc2a2ceda4505[m
+Author: Trevor Vannoy <trevorvannoy@montana.edu>
+Date:   Wed Aug 28 20:31:32 2024 -0600
+
+    update workflow instructions
+    
+    - don't tag the final resubmission as "final"; we want to avoid any
+      "final-final" tags.
+    - fix some typos
+
+[33mcommit 508fcca75c2a3c41cb3b65690c253a3a7dff4bc1[m[33m ([m[1;33mtag: [m[1;33mhw-2-submission[m[33m)[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Aug 27 02:48:55 2024 +0000
+
+    Initial commit

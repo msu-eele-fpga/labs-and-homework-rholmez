@@ -78,12 +78,45 @@ entity de10nano_top is
   );
 end entity de10nano_top;
 
+
 architecture de10nano_arch of de10nano_top is
+
+    signal PB_single       : std_logic;
+    signal HPS_LED_control : boolean                      := false;
+    signal base_period     : unsigned(7 downto 0)         := "00010000";
+    signal LED_reg         : std_logic_vector(7 downto 0) := "00000000";
+    signal rst             : std_logic                    := '0';
+
+    component LED_patterns is 
+    generic( 
+       system_clock_period : time := 20 ns
+    );
+    port(
+        clk              : in  std_logic;
+        rst              : in  std_logic;
+        PB               : in  std_logic;
+        SW               : in  std_logic_vector(3 downto 0);
+        HPS_LED_control  : in  boolean;
+        base_period      : in  unsigned(7 downto 0);
+        LED_reg          : in  std_logic_vector(7 downto 0);
+        LED              : out std_logic_vector(7 downto 0)
+    );
+    end component LED_patterns;
 
 begin
 
-  -- Add VDHL code to connect the four switches (SW) to four LEDs
-  led(3 downto 0) <= sw;
-  led(7 downto 4) <= null;
+    PB_single <= not push_button_n(0);
+
+    led_pattern : component LED_patterns
+        port map (
+            clk             =>  fpga_clk1_50,
+            rst             =>  rst,
+            PB              =>  PB_single,
+            SW              =>  sw,
+            HPS_LED_control =>  HPS_LED_control,
+            base_period     =>  base_period,
+            LED_reg         => LED_reg,
+            LED             =>  led
+        );
 
 end architecture de10nano_arch;
