@@ -32,8 +32,9 @@ architecture LED_patterns_arch of LED_patterns is
 
     --State Machine
     type state_type is (state0, state1, state2, state3, state4, display);
-    signal state : state_type;
+    signal state : state_type := state0;
     signal prev_state : state_type;
+
 
     --clkgen
 
@@ -99,6 +100,7 @@ architecture LED_patterns_arch of LED_patterns is
         period_base_clk_full_prec <= SYS_CLK_FREQ * base_period;
         --period_base_clk <= period_base_clk_full_prec(N_BITS_CLK_CYCLES - 1 downto 4);
         period_base_clk <= "10111110101111000010000000";
+    
 
         --clkgen
         clk_generator : component clk_gen
@@ -190,94 +192,50 @@ architecture LED_patterns_arch of LED_patterns is
                             prev_state <= state0;
                             if PB_sync = '1' then
                                 state <= display;
-                            elsif sw = "0000" then
-                                state <= state0;
-                            elsif sw = "0001" then
-                                state <= state1;
-                            elsif sw = "0010" then
-                                state <= state2;
-                            elsif sw = "0011" then
-                                state <= state3;
-                            elsif sw = "0100" then
-                                state <= state4;
-                            else
-                                state <= prev_state;
                             end if;
                         
                         when state1 =>
                               prev_state <= state1;
-                              if PB_sync = '1' then
+                            if PB_sync = '1' then
                                 state <= display;
-                            elsif sw = "0000" then
-                                state <= state0;
-                            elsif sw = "0001" then
-                                state <= state1;
-                            elsif sw = "0010" then
-                                state <= state2;
-                            elsif sw = "0011" then
-                                state <= state3;
-                            elsif sw = "0100" then
-                                state <= state4;
-                            else
-                                state <= prev_state;
+                    
                             end if;
                         when state2 =>
                               prev_state <= state2;
-                              if PB_sync = '1' then
+                            if PB_sync = '1' then
                                 state <= display;
-                            elsif sw = "0000" then
-                                state <= state0;
-                            elsif sw = "0001" then
-                                state <= state1;
-                            elsif sw = "0010" then
-                                state <= state2;
-                            elsif sw = "0011" then
-                                state <= state3;
-                            elsif sw = "0100" then
-                                state <= state4;
-                            else
-                                state <= prev_state;
+                    
                             end if;
                         when state3 =>
                               prev_state <= state3;
-                              if PB_sync = '1' then
+                            if PB_sync = '1' then
                                 state <= display;
-                            elsif sw = "0000" then
-                                state <= state0;
-                            elsif sw = "0001" then
-                                state <= state1;
-                            elsif sw = "0010" then
-                                state <= state2;
-                            elsif sw = "0011" then
-                                state <= state3;
-                            elsif sw = "0100" then
-                                state <= state4;
-                            else
-                                state <= prev_state;
                             end if;
                         when state4 =>
                             prev_state <= state4;
                             if PB_sync = '1' then
                                 state <= display;
-                            elsif sw = "0000" then
-                                state <= state0;
-                            elsif sw = "0001" then
-                                state <= state1;
-                            elsif sw = "0010" then
-                                state <= state2;
-                            elsif sw = "0011" then
-                                state <= state3;
-                            elsif sw = "0100" then
-                                state <= state4;
-                            else
-                                state <= prev_state;
                             end if;
 
                         when display =>
                               enable <= true;
                               if done = true then
                                 enable <= false;
-                                state <= prev_state;
+                                if sw = "0000" then
+                                    state <= state0;
+                                elsif sw = "0001" then
+                                    state <= state1;
+                                elsif sw = "0010" then
+                                    state <= state2;
+                                elsif sw = "0011" then
+                                    state <= state3;
+                                elsif sw = "0100" then
+                                    state <= state4;
+                                else 
+                                    state <= prev_state;
+                                end if;
+
+                        
                               end if;
                         when others =>
                             state <= prev_state;
@@ -300,7 +258,7 @@ architecture LED_patterns_arch of LED_patterns is
                     when state4 =>
                         LED(7 downto 0) <= led7 & pat4;
                     when display =>
-                        LED(7 downto 0) <= led7 & "000" & SW;
+                        LED(7 downto 0) <= "0000" & SW;
                     when others => 
                         LED(7 downto 0) <= "11111111";
                   end case;
