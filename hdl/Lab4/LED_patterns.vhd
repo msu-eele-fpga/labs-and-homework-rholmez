@@ -12,7 +12,7 @@ entity LED_patterns is
         rst              : in  std_logic;
         PB               : in  std_logic;
         SW               : in  std_logic_vector(3 downto 0);
-        HPS_LED_control  : in  boolean;
+        HPS_LED_control  : in  std_logic;
         base_period      : in  unsigned(7 downto 0);
         LED_reg          : in  std_logic_Vector(7 downto 0);
         LED              : out std_logic_Vector(7 downto 0)
