@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;  -- Add this for numeric conversions
 use ieee.math_real.all;
+-- test;
 
 entity led_patterns_avalon is
     port( 

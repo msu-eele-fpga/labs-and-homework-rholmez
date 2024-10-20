@@ -1,0 +1,10 @@
+LICENSE
+README.md
+docs/
+hdl/
+linux/
+quartus/
+sim/
+soc_system.ipx
+sw/
+tatus
