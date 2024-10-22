@@ -98,8 +98,8 @@ architecture LED_patterns_arch of LED_patterns is
     begin
         --base math
         period_base_clk_full_prec <= SYS_CLK_FREQ * base_period;
-        --period_base_clk <= period_base_clk_full_prec(N_BITS_CLK_CYCLES - 1 downto 4);
-        period_base_clk <= "10111110101111000010000000";
+        period_base_clk <= period_base_clk_full_prec(N_BITS_CLK_CYCLES - 1 downto 4);
+        --period_base_clk <= "10111110101111000010000000";
     
 
         --clkgen
@@ -246,22 +246,26 @@ architecture LED_patterns_arch of LED_patterns is
         output_logic : process(clk, state)
             begin
                 if rising_edge(clk) then
-                  case state is 
-                    when state0 =>
-                        LED(7 downto 0) <= led7 & pat0;
-                    when state1 =>
-                        LED(7 downto 0) <= led7 & pat1;
-                    when state2 =>
-                        LED(7 downto 0) <= led7 & std_logic_vector(to_unsigned(pat2, 7));
-                    when state3 =>
-                        LED(7 downto 0) <= led7 & std_logic_vector(to_unsigned(pat3, 7));
-                    when state4 =>
-                        LED(7 downto 0) <= led7 & pat4;
-                    when display =>
-                        LED(7 downto 0) <= "0000" & SW;
-                    when others => 
-                        LED(7 downto 0) <= "11111111";
-                  end case;
+                    if HPS_LED_control = '1' then
+                        case state is 
+                            when state0 =>
+                                LED(7 downto 0) <= led7 & pat0;
+                            when state1 =>
+                                LED(7 downto 0) <= led7 & pat1;
+                            when state2 =>
+                                LED(7 downto 0) <= led7 & std_logic_vector(to_unsigned(pat2, 7));
+                            when state3 =>
+                                LED(7 downto 0) <= led7 & std_logic_vector(to_unsigned(pat3, 7));
+                            when state4 =>
+                                LED(7 downto 0) <= led7 & pat4;
+                            when display =>
+                                LED(7 downto 0) <= "0000" & SW;
+                            when others => 
+                                LED(7 downto 0) <= "11111111";
+                        end case;
+                    else
+                        LED <= LED_reg;
+                    end if;
                 end if;
         end process;
 
