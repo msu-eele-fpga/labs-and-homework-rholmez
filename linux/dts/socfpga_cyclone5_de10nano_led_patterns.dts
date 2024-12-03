@@ -1,0 +1,16 @@
+#include "socfpga_cyclone5_de10nano.dtsi"
+
+
+/{
+
+    leds {
+        compatible = "gpio-leds";
+        led-hps0 {
+            color = <2>;
+            function = "heartbeat";
+            gpios = <&portb 24 0>;
+            linux,default-trigger = "heartbeat";
+        };
+    };
+
+};
