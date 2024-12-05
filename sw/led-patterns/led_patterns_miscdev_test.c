@@ -40,12 +40,43 @@ int main () {
 	printf("fseek ret = %d\n", ret);
 	printf("errno =%s\n", strerror(errno));
 
+	val = 0x00;
+    ret = fseek(file, HPS_LED_CONTROL_OFFSET, SEEK_SET);
+	ret = fwrite(&val, 4, 1, file);
+	// We need to "flush" so the OS finishes writing to the file before our code continues.
+	fflush(file);
 
+	
+	printf("\ndisplaying my led pattern....\n\n");
+	
+
+	while(1){
+		val = 0xAA;
+    	ret = fseek(file, LED_REG_OFFSET, SEEK_SET);
+		ret = fwrite(&val, 4, 1, file);
+		fflush(file);
+		usleep(200*1000);
+		val = 0x55;
+    	ret = fseek(file, LED_REG_OFFSET, SEEK_SET);
+		ret = fwrite(&val, 4, 1, file);
+		fflush(file);
+		usleep(200*1000);
+
+	}
+
+	// Turn on hardware-control mode
+	printf("back to hardware-control mode....\n");
+	val = 0x01;
+    ret = fseek(file, HPS_LED_CONTROL_OFFSET, SEEK_SET);
+	ret = fwrite(&val, 4, 1, file);
+	fflush(file);
+
+	/*
 	printf("\n************************************\n*");
 	printf("* write values\n");
 	printf("************************************\n\n");
 	// Turn on software-control mode
-	val = 0x01;
+	val = 0x00;
     ret = fseek(file, HPS_LED_CONTROL_OFFSET, SEEK_SET);
 	ret = fwrite(&val, 4, 1, file);
 	// We need to "flush" so the OS finishes writing to the file before our code continues.
@@ -83,7 +114,7 @@ int main () {
 
 	// Turn on hardware-control mode
 	printf("back to hardware-control mode....\n");
-	val = 0x00;
+	val = 0x01;
     ret = fseek(file, HPS_LED_CONTROL_OFFSET, SEEK_SET);
 	ret = fwrite(&val, 4, 1, file);
 	fflush(file);
@@ -117,6 +148,8 @@ int main () {
 
 	ret = fread(&val, 4, 1, file);
 	printf("LED_reg = 0x%x\n", val);
+
+	*/
 
 	fclose(file);
 	return 0;
