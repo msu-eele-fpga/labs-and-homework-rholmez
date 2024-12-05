@@ -13,4 +13,9 @@
         };
     };
 
+    led_patterns: led_patterns@ff245A80 {
+        compatible = "Holmes,led_patterns";
+        reg = <0xff245A80 16>;
+    };
+
 };
